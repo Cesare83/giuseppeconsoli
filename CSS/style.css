@@ -10,7 +10,7 @@
   --effect-color: #ff9696;
   /*---------FONT SIZE-----------------*/
   --title-size: 60px;
-  --link-size: 25px;
+  --link-size: 23px;
 }
 
 /*----------------------------------HOVER EFFECTS-----------------------------*/
@@ -24,7 +24,7 @@
 
 /*---------------------OVERALL FEATURES---------------------------------------*/
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: var(--text-color-base);
   height: 100%;
   width: 100%;
@@ -53,8 +53,10 @@ a {
 /*--------------------------PAGE-LAYOUT---------------------------------------*/
 .page {
   display: grid;
+  position: relative;
   grid-template-rows: auto auto;
   max-width: 1000px;
+  min-height: 100vh;
   margin: 30px auto auto auto;
 }
 
@@ -68,7 +70,19 @@ a {
 .uppertext1, .uppertext2, .bottomtext {
   font-size: 20px;
   text-align: justify;
+}
+
+.uppertext1 {
+  padding: 40px 40px 0 40px;
+}
+
+.uppertext2 {
+  padding: 0 40px 40px 40px;
+}
+
+.bottomtext {
   padding: 40px;
+  margin-bottom: 60px;
 }
 
 .uppertext1 {
@@ -95,6 +109,19 @@ img {
   height: 100%;
   width: auto;
   object-fit: cover;
+}
+
+/*------------------------FOOTER----------------------------------------------*/
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--title-color);
+}
+
+.footer-text {
+  text-align: center;
+  color: #fff;
 }
 
                             /* Fade-in and Fade-out effects */
