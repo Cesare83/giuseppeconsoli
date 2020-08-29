@@ -1,10 +1,13 @@
+* {
+  box-sizing: border-box;
+}
 /*---------------------------------VARIABLES----------------------------------*/
 :root {
 
   /*----------COLORS-------------------*/
   --text-color-base: #000;
-  --title-color: #e5b506;
-  --effect-color: #f9d243;
+  --title-color: #ff7373;
+  --effect-color: #ff9696;
   /*---------FONT SIZE-----------------*/
   --title-size: 60px;
   --link-size: 25px;
@@ -50,9 +53,96 @@ a {
 /*--------------------------PAGE-LAYOUT---------------------------------------*/
 .page {
   display: grid;
-  max-width: 1000px;
   grid-template-rows: auto auto;
+  max-width: 1000px;
   margin: 30px auto auto auto;
 }
 
 /*-------------------------INDEX----------------------------------------------*/
+
+.content {
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+.uppertext1, .uppertext2, .bottomtext {
+  font-size: 20px;
+  text-align: justify;
+  padding: 40px;
+}
+
+.uppertext1 {
+  font-style: italic;
+}
+
+.gallery {
+  max-height: 100%;
+  grid-template-rows: 20% 80%;
+  margin: 10px auto auto auto;
+}
+
+.title {
+  padding-left: 2%;
+}
+
+.slide {
+  margin: auto;
+  height: 95vw;
+  width: 95vw;
+}
+
+img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+                            /* Fade-in and Fade-out effects */
+.fade {
+animation: fadeInOut ease 2s;
+-webkit-animation: fadeInOut ease 2s;
+-moz-animation: fadeInOut ease 2s;
+-o-animation: fadeInOut ease 2s;
+-ms-animation: fadeInOut ease 2s;
+}
+@keyframes fadeInOut {
+  0%, 100% {opacity:0;}
+  20%, 80% {opacity:1;}
+}
+
+@-moz-keyframes fadeInOut {
+  0%, 100% {opacity:0;}
+  20%, 80% {opacity:1;}
+}
+
+@-webkit-keyframes fadeInOut {
+  0%, 100% {opacity:0;}
+  20%, 80% {opacity:1;}
+}
+
+@-o-keyframes fadeInOut {
+  0%, 100% {opacity:0;}
+  20%, 80% {opacity:1;}
+}
+
+@-ms-keyframes fadeInOut {
+  0%, 100% {opacity:0;}
+  20%, 80% {opacity:1;}
+}
+
+                                  /* Media queries */
+
+@media only screen and (min-width: 500px) {
+
+  .slide {
+    margin: auto;
+    height: 400px;
+    width: 600px;
+  }
+
+  .gallery {
+    margin: auto;
+  }
+
+
+}
