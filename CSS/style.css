@@ -35,26 +35,51 @@ a {
   color: var(--title-color);
 }
 
+.text {
+  font-size: 20px;
+  text-align: justify;
+}
+
 .header-first-row {
     font-size: var(--title-size);
     border-bottom: 5px solid var(--title-color);
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .header-second-row {
   font-size: var(--link-size);
-  padding-top: 10px;
+  margin-top: 10px;
 }
 
 .internal-link {
   padding-left: 6px;
 }
 
+.content {
+margin: 50px 50px 100px 50px;
+}
+
+h1 {
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--title-color);
+}
+
+.footer-text {
+  text-align: center;
+  color: #fff;
+}
+
 /*--------------------------PAGE-LAYOUT---------------------------------------*/
 .page {
   display: grid;
   position: relative;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto auto auto;
   max-width: 1000px;
   min-height: 100vh;
   margin: 30px auto auto auto;
@@ -62,26 +87,17 @@ a {
 
 /*-------------------------INDEX----------------------------------------------*/
 
-.content {
+.index-content {
   display: grid;
   grid-template-rows: auto auto auto;
-}
-
-.uppertext1, .uppertext2, .bottomtext {
-  font-size: 20px;
-  text-align: justify;
-}
-
-.uppertext1 {
-  padding: 40px 40px 0 40px;
+  background-color: pink;
 }
 
 .uppertext2 {
-  padding: 0 40px 40px 40px;
+  margin-bottom: 40px;
 }
 
 .bottomtext {
-  padding: 40px;
   margin-bottom: 60px;
 }
 
@@ -95,34 +111,80 @@ a {
   margin: 10px auto auto auto;
 }
 
-.title {
-  padding-left: 2%;
-}
-
 .slide {
   margin: auto;
   height: 95vw;
   width: 95vw;
 }
 
-img {
+.index-img {
   height: 100%;
   width: auto;
   object-fit: cover;
 }
 
-/*------------------------FOOTER----------------------------------------------*/
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: var(--title-color);
+
+
+/*--------------------------------AUTOBIOGRAFIA-------------------------------*/
+
+.autobiografia-content {
+  display: grid;
+  grid-template-rows: auto auto;
 }
 
-.footer-text {
-  text-align: center;
-  color: #fff;
+.autobiografia-section-title {
+  height: 250px;
+  display: grid;
+  grid-template-columns: 25% 65%;
+  background-color: pink;
 }
+
+.image-container {
+  margin: auto;
+  height: 250px;
+}
+
+.autobiografia-title-image {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+.autobiografia-title {
+  margin: auto;
+}
+
+.autobiografia-showcase {
+  display: grid;
+  grid-template-rows: auto auto;
+  padding-top: 40px;
+}
+
+.autobiografia-showcase-page1 {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.autobiografia-showcase-images-wrapper {
+  display: grid;
+  width: 250px;
+  grid-template-rows: auto auto;
+  margin: auto;
+}
+
+.autobiografia-showcase-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 40px 0 40px 0;
+}
+
+.autobiografia-text {
+  text-align: justify;
+}
+
+
+
 
                             /* Fade-in and Fade-out effects */
 .fade {
