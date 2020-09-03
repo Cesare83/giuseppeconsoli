@@ -90,7 +90,6 @@ footer {
 .index-content {
   display: grid;
   grid-template-rows: auto auto auto;
-  background-color: pink;
 }
 
 .uppertext2 {
@@ -126,64 +125,48 @@ footer {
 
 
 /*--------------------------------AUTOBIOGRAFIA-------------------------------*/
-
-.autobiografia-content {
+.autobiografia-page {
   display: grid;
   grid-template-rows: auto auto;
 }
 
-.autobiografia-section-title {
-  height: 250px;
-  display: grid;
-  grid-template-columns: 25% 65%;
-  background-color: pink;
-}
-
-.image-container {
-  margin: auto;
-  height: 250px;
-}
-
-.autobiografia-title-image {
-  height: 100%;
-  width: auto;
-  object-fit: cover;
-}
-
-.autobiografia-title {
-  margin: auto;
-}
-
-.autobiografia-showcase {
+.autobiografia-page1-wrapper {
   display: grid;
   grid-template-rows: auto auto;
-  padding-top: 40px;
 }
 
-.autobiografia-showcase-page1 {
+.autobiografia-page-container {
   display: grid;
   grid-template-columns: auto auto;
 }
 
-.autobiografia-showcase-images-wrapper {
-  display: grid;
-  width: 250px;
-  grid-template-rows: auto auto;
+.autobiografia-page1-title {
   margin: auto;
 }
 
-.autobiografia-showcase-image {
-  width: 200px;
+.autobiografia-images {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  margin: auto;
+
+}
+
+.autobiografia-image {
   height: 200px;
+  width: 200px;
   object-fit: cover;
-  margin: 40px 0 40px 0;
+  margin: 10px 0 10px 0;
 }
 
 .autobiografia-text {
+  padding-left: 40px;
   text-align: justify;
 }
 
-
+.autobiografia-page-counter {
+  display: flex;
+  margin: auto;
+}
 
 
                             /* Fade-in and Fade-out effects */
