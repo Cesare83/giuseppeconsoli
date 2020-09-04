@@ -82,7 +82,7 @@ footer {
   max-width: 1000px;
   margin: auto;
   min-height: 100vh;
-  background-color: pink;
+  
 }
 
 /*-------------------------INDEX----------------------------------------------*/
@@ -157,7 +157,7 @@ footer {
 .section-title-container {
   margin: auto;
   text-align: center;
-  background-color: red;
+
 }
 
 .autobiografia-images {
@@ -176,15 +176,7 @@ footer {
   font-size: 15px;
   text-align: center;
   margin: auto;
-  background-color: yellow;
-}
 
-.autobiografia-image {
-  height: auto;
-  max-height: 300px;
-  width: 250px;
-  object-fit: cover;
-  padding: 20px 0 0 0;
 }
 
 .autobiografia-image-extrarow {
@@ -207,6 +199,19 @@ footer {
   margin: auto;
 }
 
+.autobiografia-image {
+
+}
+
+.image-item-left {
+  float: left;
+  margin: 20px 20px 20px 0;
+}
+
+.image-item-right {
+  float: right;
+  margin: 20px 0 20px 20px;
+}
 
                             /* Fade-in and Fade-out effects */
 .fade {
