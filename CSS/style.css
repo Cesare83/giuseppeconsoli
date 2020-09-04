@@ -9,7 +9,7 @@
   --title-color: #ff7373;
   --effect-color: #ff9696;
   /*---------FONT SIZE-----------------*/
-  --title-size: 60px;
+  --title-size: 90px;
   --link-size: 23px;
 }
 
@@ -26,8 +26,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
   color: var(--text-color-base);
-  height: 100%;
-  width: 100%;
 }
 
 a {
@@ -44,6 +42,7 @@ a {
     font-size: var(--title-size);
     border-bottom: 5px solid var(--title-color);
     margin-bottom: 10px;
+    max-width: 1000px;
 }
 
 .header-second-row {
@@ -56,7 +55,7 @@ a {
 }
 
 .content {
-margin: 50px 50px 100px 50px;
+padding: 50px 50px 100px 50px;
 }
 
 h1 {
@@ -81,8 +80,9 @@ footer {
   position: relative;
   grid-template-rows: auto auto auto;
   max-width: 1000px;
+  margin: auto;
   min-height: 100vh;
-  margin: 30px auto auto auto;
+  background-color: pink;
 }
 
 /*-------------------------INDEX----------------------------------------------*/
@@ -125,9 +125,18 @@ footer {
 
 
 /*--------------------------------AUTOBIOGRAFIA-------------------------------*/
+.autobiografia-content {
+  max-width: 1000px;
+}
+
 .autobiografia-page {
   display: grid;
   grid-template-rows: auto auto;
+}
+
+.autobiografia-page-extrarow {
+  display: grid;
+  grid-template-rows: auto auto auto;
 }
 
 .autobiografia-page1-wrapper {
@@ -141,26 +150,56 @@ footer {
 }
 
 .autobiografia-page1-title {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+.section-title-container {
   margin: auto;
+  text-align: center;
+  background-color: red;
 }
 
 .autobiografia-images {
   display: grid;
   grid-template-rows: auto auto auto;
   margin: auto;
+}
 
+.autobiografia-images-extrarow {
+  display: flex;
+  margin: auto;
+}
+
+
+.image-text {
+  font-size: 15px;
+  text-align: center;
+  margin: auto;
+  background-color: yellow;
 }
 
 .autobiografia-image {
-  height: 200px;
-  width: 200px;
+  height: auto;
+  max-height: 300px;
+  width: 250px;
   object-fit: cover;
-  margin: 10px 0 10px 0;
+  padding: 20px 0 0 0;
+}
+
+.autobiografia-image-extrarow {
+  height: 250px;
+  width: auto;
+  max-width: 300px;
+  object-fit: cover;
+  padding: 20px 20px 0px 20px;
 }
 
 .autobiografia-text {
+  display: flex;
   padding-left: 40px;
   text-align: justify;
+  margin: auto;
 }
 
 .autobiografia-page-counter {
