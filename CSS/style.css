@@ -14,7 +14,7 @@
 }
 
 /*----------------------------------HOVER EFFECTS-----------------------------*/
-.link-span:hover {
+.link-span:hover, .page-switch:hover {
   color: var(--effect-color);
 }
 
@@ -55,7 +55,7 @@ a {
 }
 
 .content {
-padding: 50px 50px 100px 50px;
+margin: 70px 50px 70px 50px;
 }
 
 h1 {
@@ -82,7 +82,7 @@ footer {
   max-width: 1000px;
   margin: auto;
   min-height: 100vh;
-  
+
 }
 
 /*-------------------------INDEX----------------------------------------------*/
@@ -97,7 +97,7 @@ footer {
 }
 
 .bottomtext {
-  margin-bottom: 60px;
+  margin: 40px auto 60px auto;
 }
 
 .uppertext1 {
@@ -107,7 +107,7 @@ footer {
 .gallery {
   max-height: 100%;
   grid-template-rows: 20% 80%;
-  margin: 10px auto auto auto;
+  margin: 20px auto auto auto;
 }
 
 .slide {
@@ -134,63 +134,13 @@ footer {
   grid-template-rows: auto auto;
 }
 
-.autobiografia-page-extrarow {
-  display: grid;
-  grid-template-rows: auto auto auto;
+.section-title {
+  margin: 50px auto 60px auto;
 }
-
-.autobiografia-page1-wrapper {
-  display: grid;
-  grid-template-rows: auto auto;
-}
-
-.autobiografia-page-container {
-  display: grid;
-  grid-template-columns: auto auto;
-}
-
-.autobiografia-page1-title {
-  display: grid;
-  grid-template-columns: 25% 75%;
-}
-
-.section-title-container {
-  margin: auto;
-  text-align: center;
-
-}
-
-.autobiografia-images {
-  display: grid;
-  grid-template-rows: auto auto auto;
-  margin: auto;
-}
-
-.autobiografia-images-extrarow {
-  display: flex;
-  margin: auto;
-}
-
 
 .image-text {
   font-size: 15px;
   text-align: center;
-  margin: auto;
-
-}
-
-.autobiografia-image-extrarow {
-  height: 250px;
-  width: auto;
-  max-width: 300px;
-  object-fit: cover;
-  padding: 20px 20px 0px 20px;
-}
-
-.autobiografia-text {
-  display: flex;
-  padding-left: 40px;
-  text-align: justify;
   margin: auto;
 }
 
@@ -199,18 +149,24 @@ footer {
   margin: auto;
 }
 
-.autobiografia-image {
+.page-switch {
+  background: none;
+  border: none;
 
+}
+
+.page-switch-current {
+  color: var(--title-color);
 }
 
 .image-item-left {
   float: left;
-  margin: 20px 20px 20px 0;
+  margin: 30px 30px 30px 0;
 }
 
 .image-item-right {
   float: right;
-  margin: 20px 0 20px 20px;
+  margin: 30px 0 30px 30px;
 }
 
                             /* Fade-in and Fade-out effects */
