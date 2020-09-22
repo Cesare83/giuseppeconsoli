@@ -7,7 +7,7 @@
   /*----------COLORS-------------------*/
   --text-color-base: #000;
   --title-color: #ff7373;
-  --effect-color: #ff9696;
+  --effect-color: #ffc7c7;
   /*---------FONT SIZE-----------------*/
   --title-size: 90px;
   --link-size: 23px;
@@ -173,37 +173,69 @@ img {
   margin: 30px 0 30px 30px;
 }
 
-                            /* Fade-in and Fade-out effects */
+/*--------------------------------CONTACT-------------------------------------*/
+
+
+.form-container {
+  width: 400px;
+  float: left;
+  margin-bottom: 60px;
+}
+
+.form-width {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.form-style {
+  background: none;
+  background-color: none;
+  border: solid 1px;
+  border-radius: 5px;
+}
+
+#invia-button {
+  float: right;
+  padding: 5px;
+  border: solid 2px;
+  border-color: var(--title-color);
+  color: var(--title-color);
+}
+
+
+
+/*--------------------Fade-in and Fade-out effects ---------------------------*/
 .fade {
-animation: fadeInOut ease 2s;
--webkit-animation: fadeInOut ease 2s;
--moz-animation: fadeInOut ease 2s;
--o-animation: fadeInOut ease 2s;
--ms-animation: fadeInOut ease 2s;
+animation: fadeInOut ease 3s;
+-webkit-animation: fadeInOut ease 3s;
+-moz-animation: fadeInOut ease 3s;
+-o-animation: fadeInOut ease 3s;
+-ms-animation: fadeInOut ease 3s;
 }
 @keyframes fadeInOut {
   0%, 100% {opacity:0;}
-  20%, 80% {opacity:1;}
+  15%, 85% {opacity:1;}
 }
 
 @-moz-keyframes fadeInOut {
   0%, 100% {opacity:0;}
-  20%, 80% {opacity:1;}
+  15%, 85% {opacity:1;}
 }
 
 @-webkit-keyframes fadeInOut {
   0%, 100% {opacity:0;}
-  20%, 80% {opacity:1;}
+  15%, 85% {opacity:1;}
 }
 
 @-o-keyframes fadeInOut {
   0%, 100% {opacity:0;}
-  20%, 80% {opacity:1;}
+  15%, 85% {opacity:1;}
 }
 
 @-ms-keyframes fadeInOut {
   0%, 100% {opacity:0;}
-  20%, 80% {opacity:1;}
+  15%, 85% {opacity:1;}
 }
 
                                   /* Media queries */

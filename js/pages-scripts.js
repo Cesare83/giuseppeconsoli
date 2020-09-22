@@ -17,6 +17,9 @@ function showPage(n) {
   for (i = 0; i < pages.length; i++) {
     pages[i].style.display = "none";
   }
+  //show the top of the loaded page
+  pages[n-1].scrollTo(0,0);
+  //load page
   pages[n-1].style.display="grid";
 }
 

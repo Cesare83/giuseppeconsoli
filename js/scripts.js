@@ -15,7 +15,7 @@ function slideShow() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "grid";
-  setTimeout(slideShow, 2000); // SLIDESHOW SPEED HERE
+  setTimeout(slideShow, 3000); // SLIDESHOW SPEED HERE
 }
 
 //start the function slideShow
