@@ -10,8 +10,9 @@
   --effect-color: #ffc7c7;
   --card-color: #efefef;
   /*---------FONT SIZE-----------------*/
-  --title-size: 90px;
-  --link-size: 23px;
+  --title-size: 40px;
+  --link-size: 16px;
+  --text-size: 13px;
 }
 
 /*----------------------------------HOVER EFFECTS-----------------------------*/
@@ -39,20 +40,18 @@ a {
 }
 
 .text {
-  font-size: 20px;
+  font-size: var(--text-size);
   text-align: justify;
 }
 
 .header-first-row {
     font-size: var(--title-size);
     border-bottom: 5px solid var(--title-color);
-    margin-bottom: 10px;
-    max-width: 1000px;
 }
 
 .header-second-row {
   font-size: var(--link-size);
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .internal-link {
@@ -60,7 +59,7 @@ a {
 }
 
 .content {
-margin: 70px 50px 70px 50px;
+margin: 40px 10px 20px 10px;
 }
 
 h1 {
@@ -77,6 +76,7 @@ footer {
 .footer-text {
   text-align: center;
   color: #fff;
+  font-size: var(--text-size);
 }
 
 /*--------------------------PAGE-LAYOUT---------------------------------------*/
@@ -84,16 +84,16 @@ footer {
   display: grid;
   position: relative;
   grid-template-rows: auto auto auto;
-  max-width: 1000px;
   margin: auto;
+  width: 90vw;
   min-height: 100vh;
-
 }
 
 /*-------------------------INDEX----------------------------------------------*/
 
 .index-content {
   display: grid;
+  max-width: 100%;
   grid-template-rows: auto auto auto;
 }
 
@@ -112,26 +112,15 @@ footer {
 .gallery {
   max-height: 100%;
   grid-template-rows: 20% 80%;
-  margin: 20px auto auto auto;
-}
-
-.slide {
   margin: auto;
-  height: 95vw;
-  width: 95vw;
 }
 
-img {
-  height: 100%;
-  width: 100%;
+.index-image {
+  margin: auto;
+  width: 270px;
+  height: 230px;
   object-fit: cover;
 }
-
-.index-img {
-
-}
-
-
 
 /*--------------------------------AUTOBIOGRAFIA-------------------------------*/
 .autobiografia-content {
@@ -143,19 +132,27 @@ img {
   grid-template-rows: auto auto;
 }
 
-.section-title {
-  margin: 50px auto 60px auto;
-}
-
 .image-text {
-  font-size: 15px;
+  font-size: var(--text-size);
   text-align: center;
   margin: auto;
 }
 
+.autobiografia-image {
+  margin: auto;
+  width: 270px;
+  height: 230px;
+  object-fit: cover;
+}
+
+.image-item-left, .image-item-right {
+  display: grid;
+  margin: 10px auto 10px auto;
+}
+
 .autobiografia-page-counter {
   display: flex;
-  margin: auto;
+  margin: 10px auto 50px auto;
 }
 
 .page-switch {
@@ -168,15 +165,7 @@ img {
   color: var(--title-color);
 }
 
-.image-item-left {
-  float: left;
-  margin: 30px 30px 30px 0;
-}
 
-.image-item-right {
-  float: right;
-  margin: 30px 0 30px 30px;
-}
 
 /*--------------------------------OPERE---------------------------------------*/
 
@@ -327,19 +316,60 @@ animation: fadeInOut ease 3s;
   15%, 85% {opacity:1;}
 }
 
-                                  /* Media queries */
+
+/*----------------------------------Media queries---------------------------- */
 
 @media only screen and (min-width: 500px) {
 
-  .slide {
-    margin: auto;
+  /*---------VARIABLES-------------*/
+  :root {
+
+    --title-size: 90px;
+    --link-size: 23px;
+    --text-size: 20px;
+  }
+
+  /*---------PAGE-LAYOUT-----------*/
+  .page {
+    max-width: 1000px;
+  }
+
+  .header-second-row {
+    font-size: var(--link-size);
+    margin-top: 10px;
+  }
+
+  .content {
+  margin: 70px 50px 70px 50px;
+  }
+
+  /*---------INDEX-----------------*/
+
+  .index-image {
     height: 400px;
     width: 600px;
   }
 
   .gallery {
-    margin: auto;
+    margin: 20px auto auto auto;
   }
+
+  /*---------AUTOBIOGRAFIA---------*/
+  .autobiografia-image {
+    width: auto;
+    height: auto;
+  }
+
+  .image-item-left {
+    float: left;
+    margin: 30px 30px 30px 0;
+  }
+
+  .image-item-right {
+    float: right;
+    margin: 30px 0 30px 30px;
+  }
+
 
 
 }
