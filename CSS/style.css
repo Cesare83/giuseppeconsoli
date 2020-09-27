@@ -12,7 +12,7 @@
   /*---------FONT SIZE-----------------*/
   --title-size: 40px;
   --link-size: 16px;
-  --text-size: 13px;
+  --text-size: 14px;
 }
 
 /*----------------------------------HOVER EFFECTS-----------------------------*/
@@ -39,9 +39,30 @@ a {
   color: var(--title-color);
 }
 
+h1 {
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--title-color);
+}
+
 .text {
   font-size: var(--text-size);
   text-align: justify;
+}
+
+/*--------------------------PAGE-LAYOUT---------------------------------------*/
+.page {
+  display: grid;
+  position: relative;
+  grid-template-rows: auto auto auto;
+  margin: auto;
+  width: 90vw;
+  min-height: 100vh;
 }
 
 .header-first-row {
@@ -62,31 +83,10 @@ a {
 margin: 40px 10px 20px 10px;
 }
 
-h1 {
-  text-align: center;
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: var(--title-color);
-}
-
 .footer-text {
   text-align: center;
   color: #fff;
   font-size: var(--text-size);
-}
-
-/*--------------------------PAGE-LAYOUT---------------------------------------*/
-.page {
-  display: grid;
-  position: relative;
-  grid-template-rows: auto auto auto;
-  margin: auto;
-  width: 90vw;
-  min-height: 100vh;
 }
 
 /*-------------------------INDEX----------------------------------------------*/
@@ -138,16 +138,16 @@ footer {
   margin: auto;
 }
 
-.autobiografia-image {
-  margin: auto;
-  width: 270px;
-  height: 230px;
-  object-fit: cover;
+.image-item-left, .image-item-right {
+
 }
 
-.image-item-left, .image-item-right {
+.autobiografia-image {
   display: grid;
-  margin: 10px auto 10px auto;
+  margin: auto;
+  max-width: 270px;
+  height: auto;
+  object-fit: cover;
 }
 
 .autobiografia-page-counter {
@@ -198,10 +198,25 @@ footer {
   display: grid;
   grid-template-rows: 80% 20%;
   margin: 20px;
-  padding: 20px;
-  height: 270px;
+  height: 260px;
   width: 250px;
   background-color: var(--card-color);
+}
+
+.card-sample {
+  display: grid;
+  margin: 20px;
+  height: 230px;
+  width: 250px;
+  background-color: var(--card-color);
+}
+
+.card-image, .card-sample-image {
+  display: grid;
+  height: 210px;
+  width: 230px;
+  object-fit: cover;
+  margin: 10px;
 }
 
 .card-title {
@@ -224,20 +239,6 @@ footer {
   justify-content: center;
 }
 
-.card-sample {
-  height: 250px;
-  width: 250px;
-  background-color: var(--card-color);
-  margin: 20px;
-  padding: 20px;
-  object-fit: cover;
-}
-
-.card-sample-image {
-  max-width: 250px;
-  max-height: 250px;
-}
-
 .close-button {
   width: 60px;
   float: right;
@@ -255,8 +256,7 @@ footer {
 
 
 .form-container {
-  width: 400px;
-  float: left;
+  width: 300px;
   margin-bottom: 60px;
 }
 
@@ -324,7 +324,7 @@ animation: fadeInOut ease 3s;
   /*---------VARIABLES-------------*/
   :root {
 
-    --title-size: 90px;
+    --title-size: 80px;
     --link-size: 23px;
     --text-size: 20px;
   }
@@ -370,6 +370,13 @@ animation: fadeInOut ease 3s;
     margin: 30px 0 30px 30px;
   }
 
+  /*-----------CONTACT-------------*/
+  .form-container {
+    display: grid;
+    margin: auto;
+    width: 400px;
+    margin-bottom: 60px;
+  }
 
 
 }
